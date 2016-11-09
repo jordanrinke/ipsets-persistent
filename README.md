@@ -9,4 +9,4 @@ I added checking for and saving ipsets. sets are saved in the same place as the 
 
 
 
-Added 35-ipset, which goes into /usr/share/netfilter-persistent/plugins.d/ to enable ipsets for the newer netfilter-presistent on Debian Jessie
+Added 10-ipset, which goes into /usr/share/netfilter-persistent/plugins.d/ to enable ipsets for the newer netfilter-presistent on Debian Jessie
