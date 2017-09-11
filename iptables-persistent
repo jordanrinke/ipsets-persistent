@@ -27,11 +27,11 @@ load_rules()
 	log_action_begin_msg "Loading iptables rules"
 
   #load IPsets        
-  if [ ! -f /etc/iptables/rules.ipsets ]; then
-    log_action_cont_msg " skipping IPsets (no rules to load)"
+  if [ ! -f /etc/iptables/rules.ipset ]; then
+    log_action_cont_msg " skipping IPset (no rules to load)"
   else
     log_action_cont_msg " IPset"
-    ipset restore -! < /etc/iptables/rules.ipsets 2> /dev/null
+    ipset restore -! < /etc/iptables/rules.ipset 2> /dev/null
     if [ $? -ne 0 ]; then
       rc=1
     fi
